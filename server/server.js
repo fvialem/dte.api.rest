@@ -22,8 +22,8 @@ class Server {
       allowedHeaders: ['Content-Type', 'Authorization'],
     };
     
-    this.app.use(cors(corsOptions));
-    // this.app.use(cors());
+    // this.app.use(cors(corsOptions));
+    this.app.use(cors());
     
     // Lectura y parseo del body
     this.app.use(express.json());
